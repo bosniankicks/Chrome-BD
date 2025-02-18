@@ -1,0 +1,19 @@
+--- 🧪 Browser vs. Playwright Differences ---
+VM68:145 ⚠️ energySaverFreezing:
+VM68:146    Browser: 50.00000 ms
+VM68:147    Playwright: 50.00500 ms
+
+From my testing, the energy saver mode always stays static with 50.00500 in playwright
+
+VM68:145 ⚠️ wasmMemory64:
+VM68:146    Browser: {"bufferType":"object","pages":6,"growthTime":"0.00000 ms"}
+VM68:147    Playwright: {"bufferType":"object","pages":6,"growthTime":"0.01000 ms"}
+
+With wasmMemory64, I always get a bit of a delay within growth time in the playwright browser
+
+VM68:145 ⚠️ multipleImportMaps:
+VM68:146    Browser: false
+VM68:147    Playwright: true
+
+Always get this true with playwright
+
